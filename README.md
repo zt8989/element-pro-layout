@@ -1,16 +1,16 @@
 [English](./README.md) | 简体中文
 
-<h1 align="center">Ant Design Pro Layout</h1>
+<h1 align="center">Element UI Pro Layout</h1>
 ## 使用
 
 ```bash
-npm i @ant-design-vue/pro-layout --save
+npm i @zt8989/element-pro-layout --save
 // 或者
-yarn add @ant-design-vue/pro-layout
+yarn add @zt8989/element-pro-layout
 ```
 
 ```jsx
-import ProLayout from '@ant-design-vue/pro-layout'
+import ProLayout from '@zt8989/element-pro-layout'
 
 export default {
   name: 'BasicLayout',
