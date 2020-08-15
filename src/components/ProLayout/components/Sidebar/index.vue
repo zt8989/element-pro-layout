@@ -1,6 +1,9 @@
 <template>
   <div :class="{'has-logo':showLogo}">
-    <logo v-if="showLogo" :collapse="collapsed" />
+    <template v-if="showLogo">
+      <slot v-if="$scopedSlots.menuHeaderRender" name="menuHeaderRender" />
+      <logo v-else :collapse="collapsed" />
+    </template>
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"

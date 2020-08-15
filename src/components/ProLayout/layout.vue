@@ -86,7 +86,7 @@ export default {
     return (
       <div class={classObj}>
         {(isMobile && !collapsed) && <div class='drawer-bg' onClick={handleClickOutside} />}
-        <sidebar class='sidebar-container' props={$props}/>
+        <sidebar class='sidebar-container' props={$props} scopedSlots={$scopedSlots}/>
         <div class='main-container'>
           <div class={{ 'fixed-header': fixedHeader }}>
             {$scopedSlots.headerRender
