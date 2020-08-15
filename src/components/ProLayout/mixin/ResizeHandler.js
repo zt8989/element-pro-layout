@@ -18,6 +18,7 @@ export default {
   mounted() {
     const isMobile = this.$_isMobile()
     if (isMobile) {
+      this.handleMediaQuery && this.handleMediaQuery(isMobile)
       this.handleCollapse && this.handleCollapse({ withoutAnimation: true })
     }
   },
