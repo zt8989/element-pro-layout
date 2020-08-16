@@ -91,7 +91,7 @@ export default {
           <div class={{ 'fixed-header': fixedHeader }}>
             {$scopedSlots.headerRender
               ? ($scopedSlots.headerRender)
-              : (<navbar scopedSlots={$scopedSlots}></navbar>)}
+              : (<navbar scopedSlots={$scopedSlots} props={$props}></navbar>)}
           </div>
           <app-main>{$scopedSlots.default}</app-main>
         </div>

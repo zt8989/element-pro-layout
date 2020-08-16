@@ -21,12 +21,20 @@ export const sidebarProps = {
   }
 }
 
-export const proLayoutProps = {
-  ...sidebarProps,
+export const headerProps = {
+  collapsed: {
+    type: Boolean,
+    default: () => []
+  },
   handleCollapse: {
     type: Function,
     default: () => () => {}
-  },
+  }
+}
+
+export const proLayoutProps = {
+  ...sidebarProps,
+  ...headerProps,
   withoutAnimation: {
     type: Boolean,
     default: false
