@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:zt8989/element-pro-layout.git"
+    "url": "https://github.com/zt8989/element-pro-layout.git"
   },
   "keywords": [
     "element-ui",
@@ -23,10 +23,9 @@
   "main": "./dist/element-pro-laout.common.js",
   "author": "zhouteng",
   "license": "MIT",
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "element-ui": "^2.13.2",
-    "vue": "^2.6.10"
+  "peerDependencies": {
+    "element-ui": ">=2.13.2",
+    "vue": ">=2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.0",
