@@ -79,16 +79,8 @@ export default {
     this.menus = asyncRouterMap.find(item => item.path === '/').children
   },
   methods: {
-    handleMediaQuery (query) {
-      this.query = query
-      if (this.isMobile && !query['screen-xs']) {
-        this.isMobile = false
-        return
-      }
-      if (!this.isMobile && query['screen-xs']) {
-        this.isMobile = true
-        this.collapsed = false
-      }
+    handleMediaQuery (isMobile) {
+      this.isMobile = isMobile
     },
     handleCollapse (collapsed) {
       this.collapsed = collapsed
